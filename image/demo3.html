@@ -1,0 +1,203 @@
+
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Responsive Submenu Navigation</title>
+      
+      <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <nav>
+            <div>
+                  <i class="fa fa-bars"></i>
+            </div>
+
+            <ul>
+                  <li><a href="#">Home</a></li>
+               <li><a href="#">Shop</a></li>
+                  <li><a href="#" onmouseover="navShowMen()" onmouseout="navShowMen()">Men<i class="fas fa-sort-down"></i></a>
+                        <ul id="men">
+                              <li><a href="#">Sweater</a></li>
+                              <li><a href="#">Hoodie</a></li>
+                              <li><a href="#">T-Shirts</a></li>
+                              <li><a href="#">Bags</a></li>
+                        </ul>
+                  </li>
+                  <li><a href="#"  onmouseover="navShowWomen()" onmouseout="navShowWomen()">Women<i class="fas fa-sort-down"></i></a>
+                        <ul  id="women">
+                              <li><a href="#">Sweater</a></li>
+                              <li class="subsubmenu"><a  href="#">Hoodie<i class="fas fa-sort-down"></i></a>
+                                
+                          <ul  class="subsubmenu__items">
+                            <li><a href="#">XS</a></li>
+                            <li><a href="#">S</a></li>
+                            <li><a href="#">M</a></li>
+                            <li><a href="#">L</a></li>
+                          </ul>
+                                
+                          </li>
+                              <li><a href="#">T-Shirts</a></li>
+                              <li><a href="#">Bags</a></li>
+                        </ul>
+                  </li>
+                 
+                  <li><a href="#">Cart</a></li>
+            </ul>
+      </nav>
+<style type="text/css">
+  body {
+      margin: 0;
+      padding: 0;
+}
+ 
+ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      background: #e3e3e3;
+      position: relative;
+}
+ 
+ul li{
+      display: inline-block;
+}
+ 
+ul li a {
+      color: #292929;
+      text-decoration: none;
+      padding: 15px;
+      display: block;
+}
+ 
+ul li:hover {
+      background: lightgrey;
+}
+ 
+ul ul,
+ul ul ul{
+      position: absolute;
+      min-width: 200px;
+      background: lightgrey;
+      display: none;
+}
+ 
+ul ul > li{
+      display: block;
+      background: #e3e3e3;
+}
+ 
+
+ 
+
+ul li i {
+      color: #292929;
+      float: right;
+      padding-left: 20px;
+}
+ 
+
+
+nav div {
+      background: lightgrey;
+      color: #292929;
+      font-size: 24px;
+      padding: 0.6em;
+      cursor: pointer;
+      display: none;
+}
+
+
+.subsubmenu {
+  position: relative;
+}
+
+.subsubmenu__items {
+  padding: absolute;
+  top: 0;
+  margin-left: 200px;
+  display: none;
+  
+  &:hover {
+    display: block;
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+      nav div {
+            display: block;
+      }
+ 
+      ul {
+            display: none;
+            position: static;
+            background: #e3e3e3;
+      }
+ 
+      ul li {
+            display: block;
+      }
+ 
+      ul ul {
+            position: static;
+            background: #e3e3e3;
+      }
+  
+  ul:hover {
+    display: none;
+  }
+}
+
+</style>
+
+<script type="text/javascript">
+        $("nav div").click(function() {
+            $("ul").slideToggle();
+            $("ul ul").css("display", "none");
+      });
+
+      $("ul li").click(function() {
+             $("ul ul").slideUp();
+            $(this).find('ul li').slideToggle();
+      });
+
+
+      $("ul ul li").click(function() {
+            $("submenu__items").slideUp();
+            $(this).find('ul  li').slideToggle();
+      });
+
+
+      $(window).resize(function() {
+            if($(window).width() > 768) {
+                  $("ul").removeAttr('style');
+            }
+      });
+
+//________________________
+
+
+
+
+object.onmmouseover = function(){
+    navShow();
+};
+
+function navShowMen() {
+             var element = document.getElementById('men');
+            if (element.style.display == 'block') {
+              element.style.display = 'none';
+            }
+            else {
+              element.style.display = 'block';
+            }
+}
+
+function navShowWomen() {
+             var element = document.getElementById('women');
+            if (element.style.display == 'block') {
+              element.style.display = 'none';
+            }
+            else {
+              element.style.display = 'block';
+            }
+}
+</script>
