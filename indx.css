@@ -227,7 +227,7 @@ body {
 /* Backgorund Images */
  
 .slide:first-child {
-  background: url('') no-repeat
+  background: url('file:///C:/Users/Dell/Documents/GitHub/url/2.webp') no-repeat
     center top/cover;
 }
 .slide:nth-child(2) {
