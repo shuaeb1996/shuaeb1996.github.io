@@ -235,7 +235,7 @@ body {
     center top/cover;
 }
 .slide:nth-child(3) {
-  background: url('https://images.unsplash.com/photo-1527030280862-64139fba04ca?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1506&q=80') no-repeat
+  background: url('') no-repeat
     center top/cover;
 }
 .slide:nth-child(4) {
