@@ -227,11 +227,11 @@ body {
 /* Backgorund Images */
  
 .slide:first-child {
-  background: url('file:///C:/xampp/htdocs/2020PROJECT/url/16%20(2)%20(1).webp') no-repeat
+  background: url('file:///C:/Users/Dell/Documents/GitHub/url/16%20(2)%20(1).webp') no-repeat
     center top/cover;
 }
 .slide:nth-child(2) {
-  background: url('file:///C:/xampp/htdocs/2020PROJECT/url/cap2%20(1).webp') no-repeat
+  background: url('file:///C:/Users/Dell/Documents/GitHub/url/cap2%20(1).webp') no-repeat
     center top/cover;
 }
 .slide:nth-child(3) {
@@ -239,7 +239,7 @@ body {
     center top/cover;
 }
 .slide:nth-child(4) {
-  background: url('file:///C:/xampp/htdocs/2020PROJECT/url/13%20(2)%20(2).webp') no-repeat
+  background: url('file:///C:/Users/Dell/Documents/GitHub/url/13%20(2)%20(2).webp') no-repeat
     center top/cover;
 }
 /*.slide:nth-child(5) {
