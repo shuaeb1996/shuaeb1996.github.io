@@ -231,7 +231,7 @@ body {
     center top/cover;
 }
 .slide:nth-child(2) {
-  background: url('file:///C:/Users/Dell/Documents/GitHub/url/cap2%20(1).webp') no-repeat
+  background: url('https://images.unsplash.com/photo-1527030280862-64139fba04ca?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1506&q=80') no-repeat
     center top/cover;
 }
 .slide:nth-child(3) {
