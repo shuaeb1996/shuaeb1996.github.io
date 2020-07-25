@@ -227,7 +227,7 @@ body {
 /* Backgorund Images */
  
 .slide:first-child {
-  background: url('file:///C:/Users/Dell/Documents/GitHub/url/2.webp') no-repeat
+  background: url('https://cdn.senaterace2012.com/wp-content/uploads/build-building-house-designs_310685.jpg') no-repeat
     center top/cover;
 }
 .slide:nth-child(2) {
